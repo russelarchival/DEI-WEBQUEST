@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebQuest: Diversity, Equity & Inclusion</title>
+  <style>
+    :root {
+      --primary: #2e7d32; /* green */
+      --secondary: #f57c00; /* orange */
+      --bg: #fdfdfd;
+      --fg: #222;
+    }
+    body {
+      margin: 0; font-family: Arial, sans-serif;
+      background: var(--bg); color: var(--fg);
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex; justify-content: center;
+      background: var(--secondary);
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white; text-decoration: none;
+      padding: 1rem; font-weight: bold;
+    }
+    nav a:hover { background: rgba(0,0,0,0.2); }
+    section {
+      display: none; padding: 2rem; max-width: 1000px; margin: auto;
+    }
+    section.active { display: block; }
+    h2 { color: var(--primary); }
+    img { max-width: 100%; border-radius: 8px; margin: 1rem 0; }
+    iframe { width: 100%; height: 400px; border: none; margin: 1rem 0; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background: var(--secondary); color: white; }
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      background: var(--primary);
+      color: white; text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .button:hover { background: #1b5e20; }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      margin-top: 2rem;
+    }
+  </style>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+    window.onload = () => { showSection('intro'); }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>🌍 WebQuest: Diversity, Equity & Inclusion in the Classroom</h1>
+    <p>Exploring Multicultural Education</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('intro')">Introduction</a>
+    <a href="#" onclick="showSection('task')">Task</a>
+    <a href="#" onclick="showSection('process')">Process</a>
+    <a href="#" onclick="showSection('resources')">Resources</a>
+    <a href="#" onclick="showSection('evaluation')">Evaluation</a>
+    <a href="#" onclick="showSection('conclusion')">Conclusion</a>
+  </nav>
+
+  <section id="intro">
+    <h2>🏠 Introduction</h2>
+    <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b" alt="Students in classroom">
+    <p>
+      Our classrooms are filled with students from diverse cultural, linguistic, and social backgrounds. 
+      This WebQuest will guide you in understanding <strong>Diversity, Equity, and Inclusion (DEI)</strong> 
+      and the importance of <strong>Multicultural Education</strong> in building inclusive learning spaces.
+    </p>
+  </section>
+
+  <section id="task">
+    <h2>🎯 Task</h2>
+    <p>
+      You will create a <strong>Classroom DEI Action Plan</strong> that includes strategies for inclusivity, 
+      an example activity celebrating multiculturalism, and ways to measure fairness and belonging.
+    </p>
+    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="Inclusive education">
+  </section>
+
+  <section id="process">
+    <h2>🛠 Process</h2>
+    <p>Follow these steps:</p>
+    <ol>
+      <li>Explore key concepts of DEI and multicultural education.</li>
+      <li>Investigate real-world examples of inclusive classroom practices.</li>
+      <li>Design your action plan with 3 or more strategies.</li>
+      <li>Share with peers and reflect on your learning.</li>
+    </ol>
+    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644" alt="Teamwork in class">
+  </section>
+
+  <section id="resources">
+    <h2>🔗 Resources</h2>
+    <p>Use these resources to help with your WebQuest:</p>
+    <ul>
+      <li><a href="https://www.learningforjustice.org/" target="_blank">Learning for Justice</a></li>
+      <li><a href="https://www.unesco.org/en/education/inclusion" target="_blank">UNESCO – Inclusive Education</a></li>
+      <li><a href="https://www.edutopia.org/topic/culturally-responsive-teaching" target="_blank">Edutopia – Culturally Responsive Teaching</a></li>
+    </ul>
+    <h3>🎬 Videos</h3>
+    <iframe src="https://www.youtube.com/embed/lv8F9uP6aGU" title="Culturally Responsive Teaching"></iframe>
+    <iframe src="https://www.youtube.com/embed/Vkx7IhJ5-Y0" title="UNESCO Inclusive Education"></iframe>
+  </section>
+
+  <section id="evaluation">
+    <h2>📝 Evaluation</h2>
+    <p>Your work will be graded using this rubric:</p>
+    <table>
+      <tr>
+        <th>Criteria</th>
+        <th>Excellent (4)</th>
+        <th>Good (3)</th>
+        <th>Fair (2)</th>
+        <th>Poor (1)</th>
+      </tr>
+      <tr>
+        <td>Understanding DEI</td>
+        <td>Clear, detailed, examples</td>
+        <td>Clear but limited</td>
+        <td>Somewhat clear</td>
+        <td>Unclear</td>
+      </tr>
+      <tr>
+        <td>Multicultural Education Importance</td>
+        <td>Strong explanation with evidence</td>
+        <td>Good explanation</td>
+        <td>Basic explanation</td>
+        <td>Weak/missing</td>
+      </tr>
+      <tr>
+        <td>Action Plan</td>
+        <td>Creative, complete</td>
+        <td>Practical</td>
+        <td>Somewhat realistic</td>
+        <td>Minimal</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="conclusion">
+    <h2>🌟 Conclusion</h2>
+    <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b" alt="Graduation diversity">
+    <p>
+      Through this WebQuest, you explored how DEI and multicultural education create inclusive classrooms. 
+      Now it’s your turn to take action and apply these ideas in real learning spaces.
+    </p>
+    <p><a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfj9Si36sdMw_Cl_Td0nTFkXrkktnyXVs-CpHa9NCdkGtLJdA/viewform?usp=header" target="_blank">📥 Submit Your Reflection</a></p>
+  </section>
+
+  <footer>
+    <p>Created for inclusive classrooms • © Your School</p>
+  </footer>
+</body>
+</html>
